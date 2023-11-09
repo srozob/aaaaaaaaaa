@@ -9,7 +9,7 @@ library(rcompanion)
 library(magrittr) 
 library(dplyr)
  
-##EL PROFESOR ES UN TRIPEHIJUEPUTA
+##EL PROFESOR ES UN TRIPlEHIJUEPUTA
 ##VADiscretas
 
 #Media y Varianza
