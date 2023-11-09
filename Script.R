@@ -6,7 +6,10 @@ library(sjstats)
 library(moments)
 library(plotly)
 library(rcompanion)
-
+library(magrittr) 
+library(dplyr)
+ 
+##EL PROFESOR ES UN TRIPEHIJUEPUTA
 ##VADiscretas
 
 #Media y Varianza
@@ -250,3 +253,8 @@ BaseEjemplo%>%select(Genero,marcacel)
 table(BaseEjemplo%>%select(Genero,marcacel))
 
 cramerV(BaseEjemplo$Genero, BaseEjemplo$marcacel, bias.correct = FALSE)
+
+#####COASS
+Cuando el intervalo captura el 1, entonces el conciente pdría valer 1,implicando que las 2 varianzas son iguales 
+
+Note que el I.C del 95% para $\sigma_1^2/\sigma_2^2$ es $(0.01994435; 0.49759399)$, lo cual, dado que no contiene al 1, podría decidir con esa confianza, que las varianzas poblaciones no son iguales. Lo cual requerirá que usemos un intervalo de confianza para la diferencia de medias diferente al que presentamos anteriormente.
